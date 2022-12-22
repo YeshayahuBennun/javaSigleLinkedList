@@ -7,6 +7,11 @@ public class Main {
         sLL.createSingleLinkedList(5);
         System.out.println(sLL.getHead().getValue());
 
+        sLL.insertLinkedList(6,1);
+        sLL.insertLinkedList(6,3);
+        System.out.println(sLL.getHead().getNext().getNext().getValue());
+        System.out.println(sLL.getSize());
+
 
     }
 }
