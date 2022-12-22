@@ -71,4 +71,21 @@ public class SinglyLinkedList {
         }
         size++;
     }
+
+    //SinglyLinked List Traversal
+    public void traverseSinglyLinkedList() {
+        if (head == null) {//---------------------------------------------------------------------------- O(1)
+            System.out.println("sLL does not exist");//-------------------------------------------------- O(1)
+        } else {
+            Node actual = head;//------------------------------------------------------------------------ O(1)
+            for (int i = 0; i < size; i++) {
+                System.out.println(actual.getValue());//------------------------------------------------- O(N)
+                if(i!=size-1){
+                    System.out.println("->");//---------------------------------------------------------- O(1)
+                }
+                actual =actual.getNext();//-------------------------------------------------------------- O(1)
+            }
+        }
+        System.out.println("\n");//---------------------------------------------------------------------- O(1)
+    }
 }
