@@ -12,8 +12,8 @@ public class Main {
         sLL.insertLinkedList(8, 4);
         sLL.insertLinkedList(9, 0);
         sLL.traverseSinglyLinkedList();
-        sLL.searchNode(10);
-
+        sLL.deletionOfOneNode(6);
+        sLL.traverseSinglyLinkedList();
 
     }
 }
