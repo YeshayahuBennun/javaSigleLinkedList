@@ -152,7 +152,7 @@ public class SinglyLinkedList {
             tail = tempNode;
             size--;
 
-        }else {//Delete a node from a given location
+        } else {//Delete a node from a given location
             //We need to find the node which is located before this node and change the reference of this node to the
             //next node which is located after the node that we want to delete.
             Node tempNode = head;
@@ -165,7 +165,14 @@ public class SinglyLinkedList {
             //to delete.
             tempNode.setNext(tempNode.getNext().getNext());
             size--;
-
         }
     }
+
+    //Delete Entire SinglyLinkedList
+    public void deleteAll() {
+        head = null;//----------------------------------------------------------------------------------------O(1)
+        tail = null;//----------------------------------------------------------------------------------------O(1)
+        System.out.println("Empty");//------------------------------------------------------------------------O(1)
+    }
+
 }

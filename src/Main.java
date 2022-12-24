@@ -12,7 +12,7 @@ public class Main {
         sLL.insertLinkedList(8, 4);
         sLL.insertLinkedList(9, 0);
         sLL.traverseSinglyLinkedList();
-        sLL.deletionOfOneNode(6);
+        sLL.deleteAll();
         sLL.traverseSinglyLinkedList();
 
     }
